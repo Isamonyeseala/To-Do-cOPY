@@ -134,6 +134,7 @@ select:focus {
 ul {
     list-style-type: none;
     padding: 0;
+    overflow: hidden;
     /* margin: 20px 0; */
 }
 
@@ -149,10 +150,6 @@ li {
     border-radius: 5px;
     border-radius: 10px;
 
-    
-        padding-bottom: 15px; /* Adds spacing without relying on margins */
-        border-bottom: 2px solid rgba(0, 0, 0, 0.1); /* Adds a subtle separator */
-    
 }
 
 li span {
