@@ -46,13 +46,14 @@ body::before {
 
 /* Container for the To-Do List */
 .container {
-    max-width: 500px;
+    max-width: 100%;
     margin: 40px auto;
     margin-bottom: 80px;
     background: #fff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 .container h1 span{
     color: #E58A8A;
@@ -134,9 +135,7 @@ select:focus {
 ul {
     list-style-type: none;
     padding: 0;
-    overflow: hidden;
-    gap: 15px;
-    /* margin: 20px 0; */
+    margin: 20px 0;
 }
 
 li {
@@ -193,11 +192,15 @@ li form {
 
 /*  Mobile Responsive Design */
 @media (max-width: 600px) {
-    .container {
-        max-width: 90%;
-        margin: 10px auto;
-        padding: 15px;
+    .priority-legend ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
     }
+
+    .priority-legend li {
+        width: 100%;
+    }
+
 
     input {
         width: 100%;
